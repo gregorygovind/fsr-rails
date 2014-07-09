@@ -1,0 +1,14 @@
+<h1>Welcome To Freeseoreport</h1>
+
+
+<%= form_tag("/pages/home", method: "post") do %>
+  <%= label_tag(:q, "Enter Url") %>
+  <%= text_field_tag(:url) %>
+  <%= submit_tag("Submit") %>
+<% end %>
+
+<% unless @title1.blank? %>
+<h2>
+Site Title: <%= @title1 %>
+</h2>
+<% end %>
