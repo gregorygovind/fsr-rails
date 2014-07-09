@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+#  get 'pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -57,5 +57,5 @@ Rails.application.routes.draw do
   #   end
 
 match '/pages/home' => "pages#home",  via: [:get, :post]
-root :to => 'pages#/home'
+root :to => 'pages#home'
 end
