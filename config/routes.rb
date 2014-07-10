@@ -58,4 +58,5 @@ Rails.application.routes.draw do
 
 match '/pages/home' => "pages#home",  via: [:get, :post]
 root :to => 'pages#home'
+
 end

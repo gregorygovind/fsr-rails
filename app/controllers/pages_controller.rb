@@ -17,7 +17,17 @@ require 'mechanize'
       else
         @url = params[:url]
       end
-      @title1 = Mechanize.new.get(@url).title      
+        
+        @title1 = Mechanize.new.get(@url).title
+        @keyword = Pismo::Document.new(@url).keywords
+        @description = Pismo::Document.new(@url).description
+  
+            
+
+
+      
+
+
     end
 
 
